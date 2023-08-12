@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 5001
 app.use(express.static('dist'))
 
 app.get('/version', (req, res) => {
-  res.send('test it with no skip') // change this string to ensure a new version deployed
+  res.send('test protection') // change this string to ensure a new version deployed
 })
 
 app.get('/health', (req, res) => {
